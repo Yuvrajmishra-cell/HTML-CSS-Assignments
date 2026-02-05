@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Lecture three</title>
+    </head>
+    <style>
+        div[class~="big"] {
+            background-color: pink;
+        }
+        
+        p[lang ="en"]{
+            color :chartreuse
+        }
+        a[href^="https"] {
+            color:green;
+        }
+        img[src$=".png"] {
+            border: 4px solid red;
+        }
+        a[href*="login"] {
+            color: orange;
+        }
+        </style>
+
+        <body> 
+            <div class="big">big</div>
+           <p lang="en">English</p>
+           <p lang="fr">French</p>
+           <a href="https://www.google.com">Google</a>
+           <a href="http://www.example.com">Example</a>
+           <img src="image.png" alt="PNG Image">
+           <a href ="userlogin.html">User Login</a>
+        </body>
+</html>
