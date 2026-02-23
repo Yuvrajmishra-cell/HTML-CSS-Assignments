@@ -1,0 +1,39 @@
+#footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #27b120;
+    margin-top: 20px;
+    font-style: italic;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #4CAF50;
+    color: rgb(162, 46, 46);
+}
+tr:nth-child(even) {
+    background-color: #355db3;
+}
+#audioBtn {
+    background-color: #4CAF50;
+    color: rgb(201, 41, 41);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+#audioBtn: {
+    background-color: #2e8b57;
+    color: rgb(182, 34, 34);
+    transform: scale(1.05);
+}

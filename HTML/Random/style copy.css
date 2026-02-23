@@ -1,0 +1,234 @@
+:root {
+    --primary-color: #002147; 
+    --secondary-color: #ffcc00; 
+    --light-color: #ffffff;
+    --dark-color: #333333;
+    --bg-light: #f4f4f4;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: var(--light-color);
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+#main-header, #newsletter {
+    background: var(--primary-color);
+    color: var(--light-color);
+}
+
+#main-header {
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: var(--secondary-color) 4px solid;
+}
+
+#main-header a {
+    color: var(--light-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+#main-header ul {
+    margin: 0;
+    padding: 0;
+}
+
+#main-header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+#main-header #branding {
+    float: left;
+}
+
+#main-header #branding h1 {
+    margin: 0;
+}
+
+#navbar {
+    float: right;
+    margin-top: 10px;
+}
+
+#main-header .highlight, #main-header .current a {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+#main-header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+#showcase {
+    min-height: 400px;
+    background: linear-gradient(rgba(0, 33, 71, 0.8), rgba(0, 33, 71, 0.8)), url('https://via.placeholder.com/1500x500/35424a/ffffff?text=ITM+Campus') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#showcase h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+
+#newsletter {
+    padding: 15px;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+
+.button_1, .button {
+    background: var(--secondary-color);
+    color: var(--light-color);
+}
+
+.button_1 {
+    height: 38px;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.section-padding {
+    padding: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+
+#departments {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+#departments .box {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+#departments .box:hover {
+    transform: translateY(-10px);
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+#main-footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+
+@media(max-width: 768px) {
+    #main-header #branding,
+    #navbar,
+    #newsletter h1,
+    #newsletter form {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #main-header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        font-size: 40px;
+    }
+
+    #newsletter button, #newsletter input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #departments {
+        flex-direction: column;
+    }
+}
